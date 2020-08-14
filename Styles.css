@@ -9,22 +9,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dbdef3;
-    position: absolute;
+    background-color: #ffffff;
     top: 0;
-    left: 0;
-    right: 0;
     height: 130px;
-    width: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+    border: 2px solid black;
+    border-radius: 3px;
 
 }
 
 #quoteDisplay {
     color: rgb(12, 12, 12);
-    font-size: normal;
-    font-family: cursive;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 img {
@@ -33,7 +33,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 130px; 
+    margin-top: auto;
     transition: all .2s ease-in-out; 
     }
 
@@ -45,12 +45,12 @@ img:hover {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    background: #2550ac;/*Button Color*/
-    color: #FFF;
-    border-bottom: solid 4px #627295;
-    border-radius: 15px;
+    background: transparent;/*Button Color*/
+    color: black;
+    border: solid 1px #627295;
+    border-radius: 5px;
     bottom: 10px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -59,22 +59,25 @@ img:hover {
     }
 
   .button:active {
-    -ms-transform: translateY(4px);
+    -ms-transform: translateY(6px);
     -webkit-transform: translateY(4px);
     transform: translateY(4px);/*Move down*/
     border-bottom: none;
 }
 
 .button:hover {
-    background-color: #0f1ee4;
-     transform: scale(1.1); 
+    cursor: pointer;
+    color: white;
+    background-color: #42a842;
+    transform: scale(1.09); 
 }
 
 p {
     text-decoration: solid;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     margin: 2px;
+    text-decoration: underline;
 }
 
 footer {
